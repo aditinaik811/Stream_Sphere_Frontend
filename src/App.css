@@ -1,38 +1,208 @@
-.App {
+.main-wrapper
+{
+  width: 100%;
+  height:100vh;
+  background-color:rgb(21, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.wrapper-header{
+  height: 10%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.form-wrapper
+{
+  width:50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(167, 44, 44);
+  padding:10px;
+}
+.form-wrapper input{
+  height:40px;
+  width:80%;
+  border:none;
+  outline:none;
+  padding:10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-wrapper input::placeholder{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(173, 40, 40);
+  padding:5px;
+}
+.form-wrapper button{
+  background-color: red;
+  color: white;
+  height:40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width:30%;
+  font-size: 18px;
+  text-align: center;
+  padding:2px;
+  font-weight: bold;
+}
+
+.form-wrapper button:hover{
+  background-color: rgb(130, 4, 4);
+  cursor: pointer;
+}
+.cname
+{
+  color: rgb(203, 14, 14);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-image
+{
+  height:50%;
+}
+.preview-image{
+  height:100px;
+  width:100px;
+}
+.link{
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Dashboard */
+.dashboard-container{
+  width:100%;
+  height:100vh;
+  background-color:rgb(21, 20, 20);
+  display: flex;
+  color: white;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-nav{
+  width:20%;
+
+  background-color: rgb(30, 29, 28);
+  padding:10px ;
+}
+.content-container{
+  width:80%;
+  padding:10px ;
+}
+
+.profile-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width:100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap:10px
+}
+.profile-container img{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  margin-top:30px ;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.menu-container{
+  width: 100%;
+  margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+  gap:15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-link{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+ 
+}
+.active-menu-link{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+   background-color: red;
+  
+}
+.menu-link:hover{
+  background-color: red;
+
+}
+
+
+/* Upload Video */
+.upload-container
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+.upload-form
+{
+  background-color: rgb(27, 2, 2);
+  box-shadow: 5px 5px 10px rgb(74, 71, 71);
+  display: flex;
+  flex-direction: column;
+  padding:20px; 
+  width:90%;
+  gap:10px;
+ 
+}
+.upload-form input,textarea, select{
+  padding:10px;
+  height:40px;
+  width:100%;
+  border: none;
+  outline: none;;
+  border-radius: 5px;
+
+}
+.upload-from label{
+  font-size: 15px;
+}
+.upload-form button{
+  height:40px;
+  background-color: red;
+  color:white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.upload-form button:hover{
+  cursor: pointer;
+  background-color: rgb(80, 3, 3);
+}
+
+.thumbnail{
+  height:100px;
+  width:100px;
 }
