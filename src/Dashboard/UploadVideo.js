@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form } from 'react-router-dom'
+import { Form, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 const UploadVideo = () => {
@@ -12,6 +12,7 @@ const UploadVideo = () => {
   const[thumbnail,setThumbnail] = useState(null)
   const[loading,setLoading] = useState(false)
   const[selectThumbnail,setSelectedThumbnail] = useState(null)
+  const navigate = useNavigate()
   const videoHandler = (e)=>{
       setVideo(e.target.files[0])
   }
@@ -40,6 +41,7 @@ const UploadVideo = () => {
         setLoading(false)
         toast("Video Uploaded successfully")
         console.log(res.data)
+        navigate('/dashboard/my-videos')
       })
       .catch(err=>{
         setLoading(false)
